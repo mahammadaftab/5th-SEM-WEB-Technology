@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Table</title>
+<style>
+table {
+width: 100%;
+border-collapse: collapse;
+}
+th, td {
+border: 1px solid #ddd;
+padding: 8px;
+text-align: center;
+}
+th {
+background-color: #f4f4f4;
+}
+.highlight-lab {
+background-color: #d1e7dd; /* Light green for lab hours */
+}
+.highlight-elective {
+background-color: #cfe2f3; /* Light blue for elective hours */
+}
+.highlight-weekend {
+background-color: #f9c2c2; /* Light red for weekends */
+}
+.break {
+background-color: #ffe599; /* Light yellow for breaks */
+}
+.header, .footer {
+background-color: #e2e2e2;
+font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1><center> V Sem A Div CSE Class Time Table </center></h1>
+<table>
+<!-- Table Header -->
+<thead>
+<tr>
+<th rowspan="3">Time</th>
+<th colspan="6">Monday to Saturday</th>
+</tr>
+<tr>
+<th>Monday</th>
+<th>Tuesday</th>
+<th>Wednesday</th>
+<th>Thursday</th>
+<th>Friday</th>
+<th>Saturday</th>
+</tr>
+<tr>
+<th colspan="6">Time Table Schedule For the Academic Year Odd Semester 2024-25</th>
+</tr>
+</thead>
+<!-- Table Body -->
+<tbody>
+<tr>
+<td>9:00 - 10:00</td>
+<td class="highlight-elective">Computer Network</td>
+<td class="highlight-elective">EVS</td>
+<td class="highlight-elective">Software Engineering</td>
+<td class="highlight-elective">Theory of Computing</td>
+<td class="highlight-elective">Theory of Computing</td>
+<td class="highlight-weekend">Emerging Trends Discussion</td>
+</tr>
+<tr>
+<td>10:00 - 11:00</td>
+<td class="highlight-lab">Software Engineering</td>
+<td class="highlight-lab">Research Methodlogy</td>
+<td class="highlight-lab">Computer Network</td>
+<td class="highlight-lab">Unix System Programming</td>
+<td class="highlight-lab">Computer Network</td>
+<td class="highlight-weekend">Emerging Trends Discussion</td>
+</tr>
+<tr>
+<td class="break">11:00 - 11:10</td>
+<td class="break" colspan="6">Short Break</td>
+</tr>
+<tr>
+<td>11:10 - 12:10</td>
+<td>CN/ WEB Lab</td>
+<td>CN/ WEB Lab</td>
+<td>CN/ WEB Lab</td>
+<td>Research Methodlogy</td>
+<td>Theory of Computing</td>
+<td class="highlight-weekend">Emerging Trends Discussion</td>
+</tr>
+<tr>
+<td>12:10 - 1:10</td>
+<td>CN/ WEB Lab</td>
+<td>CN/ WEB Lab</td>
+<td>CN/ WEB Lab</td>
+<td>Software Engineering</td>
+<td>Remedial Class</td>
+<td class="highlight-weekend">Emerging Trends Discussion</td>
+</tr>
+<tr>
+<td class="break">1:10 - 2:00</td>
+<td class="break" colspan="6">Lunch Break</td>
+</tr>
+<tr>
+<td>2:00 - 3:00</td>
+<td class="highlight-elective">Research Methodlogy</td>
+<td class="highlight-elective">Theory of Computing</td>
+<td class="highlight-elective">Research Methodlogy</td>
+<td class="highlight-elective">Remedial Class</td>
+<td class="highlight-elective">Physical Education</td>
+<td class="highlight-weekend"></td>
+</tr>
+<tr>
+<td>3:00 - 4:00</td>
+<td class="highlight-lab">EVS</td>
+<td class="highlight-lab"></td>
+<td class="highlight-lab"></td>
+<td class="highlight-lab"></td>
+<td class="highlight-lab">Physical Education</td>
+<td class="highlight-weekend"></td>
+</tr>
+</tbody>
+<!-- Table Footer -->
+<tfoot>
+<tr>
+<td colspan="7" class="footer">End of Time Table</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>
