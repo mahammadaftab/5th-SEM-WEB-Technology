@@ -1,0 +1,72 @@
+* {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+}
+/* Tag selector: applies styles to all <h2> elements */
+h2 {
+ color: #2c3e50; /* Dark blue color */
+ font-family: 'Arial', sans-serif; /* Font style */
+ border-bottom: 2px solid #3498db; /* Blue border at the bottom */
+ padding-bottom: 10px;
+ margin-bottom: 20px;
+}
+/* Class selector: applies styles to all elements with class "highlight" */
+.highlight {
+ background-color: #f9ebc3; /* Light yellow background */
+ padding: 10px;
+ border-radius: 4px; /* Rounded corners */
+}
+/* ID selector: applies styles to the element with id "special" */
+#special {
+ font-weight: bold; /* Makes text bold */
+ color: #e74c3c; /* Red color */
+}
+/* Descendant selector: applies to <span> elements inside <div> elements */
+div span {
+ color: #16a085; /* Teal color */
+ font-style: italic; /* Italicizes text */
+}
+/* Attribute selector: applies to <a> elements with href attributes starting with "https" */
+a [href^="https"] {
+ color: #2980b9; /* Blue color */
+  text-decoration: none; /* Removes underline */
+}
+/* Pseudo-class selector: applies to <p> elements that are the first child of their parent */
+p :first-child {
+ font-size: 1.2em; /* Larger font size */
+ color: #34495e; /* Grayish-blue color */
+}
+/* Pseudo-element selector: applies styles to the first line of <p> elements */
+p ::first-line {
+ font-weight: bold; /* Bold text for the first line */
+ color: #7f8c8d; /* Light gray color */
+}
+/* Pseudo-class selector: applies styles to <a> elements when hovered */
+a:hover {
+ text-decoration: underline; /* Underlines text on hover */
+ color: #3498db; /* Blue color on hover */
+}
+/* Type selector: applies styles to <time> elements */
+time {
+ font-family: 'Courier New', monospace; /* Monospace font */
+ color: #9b59b6; /* Purple color */
+ display: block;
+ margin: 10px 0; /* Top and bottom margins */
+}
+/* Child selector: applies to <img> elements that are direct children of <div> elements */
+div img {
+ max-width: 100%; /* Responsive image width */
+ height: auto; /* Maintain aspect ratio */
+ border-radius: 20px; /* Rounded corners for images */
+}
+/* Attribute selector: applies to <a> elements with title attribute */
+a[title] {
+ border-bottom: 1px dotted #bdc3c7; /* Dotted underline for links with title attribute */
+}
+/* Universal styling for horizontal rules */
+hr {
+ border: 0;
+ border-top: 2px solid #bdc3c7; /* Light gray top border */
+ margin: 20px 0; /* Margin above and below */
+}
