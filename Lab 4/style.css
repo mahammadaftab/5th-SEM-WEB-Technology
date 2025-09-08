@@ -1,0 +1,74 @@
+body {
+ font-family: Arial, sans-serif;
+ background-color:orange; /* Light gray background #f4f4f4*/
+ color: #333; /* Dark gray text color */
+ margin: 0;
+ padding: 18px;
+}
+/* Header styling */
+h1 {
+ color: #2c3e50; /* Dark blue */
+ text-align: center;
+ margin-bottom: 20px;
+}
+/* Form styling */
+form {
+ background-color: #fff;/* White background for the form #fff;*/
+ border: 1px solid #ddd; /* Light gray border */
+ border-radius: 8px; /* Rounded corners */
+ padding: 20px;
+ width: 80%;
+ margin: 0 auto;
+}
+/* Table styling */
+table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-bottom: 20px;
+}
+/* Table cells styling */
+td {
+ padding: 10px;
+}
+/* Label styling */
+label {
+ display: block;
+ margin-bottom: 5px;
+ font-weight: bold;
+}
+/* Input styling */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+ width: 50%;
+ padding: 8px;
+ border: 1px solid #ccc;
+ border-radius: 4px; /* Rounded corners */
+ font-size: 16px;
+}
+/* Input styling for numbers */
+input[type="number"] {
+ -moz-appearance: textfield; /* Removes spinner in Firefox */
+}
+/* Input styling for submit button */
+button[type="submit"] {
+ background-color: #3498db; /* Blue background */
+ color: #fff; /* White text */
+ border: none;
+ border-radius: 4px;
+ padding: 10px 20px;
+ font-size: 16px;
+ cursor: pointer;
+ }
+/* Button hover effect */
+button[type="submit"]:hover {
+ background-color:red; /* #2980b9 Darker blue on hover */
+}
+/* Radio buttons and checkboxes styling */
+input[type="radio"] {
+ margin-right: 5px;
+}
+input[type="checkbox"] {
+ margin-right: 5px;
+}

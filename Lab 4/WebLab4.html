@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td><label for="rollNo">Roll No:</label></td>
+                <td><input type="text" id="rollNo" name="rollNo" required></td>
+            </tr>
+            <tr>
+<td><label for="usn">USN:</label></td>
+<td><input type="text" id="usn" name="usn" required></td>
+</tr>
+<tr>
+<td><label for="name">Name:</label></td>
+<td><input type="text" id="name" name="name" required></td>
+</tr>
+<tr>
+<td><label for="gender">Gender:</label></td>
+<td>
+<input type="radio" id="male" name="gender" value="male" required>
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="female" required>
+<label for="female">Female</label>
+<input type="radio" id="transgender" name="gender" value="transgender"
+required>
+<label for="transgender">Transgender</label>
+</td>
+</tr>
+<tr>
+<td><label for="email">E-mail:</label></td>
+<td><input type="email" id="email" name="email" required></td>
+</tr>
+<tr>
+<td><label for="aadharNo">Aadhar No:</label></td>
+<td><input type="text" id="aadharNo" name="aadharNo" required></td>
+</tr>
+<tr>
+<td><label for="semester">Semester:</label></td>
+<td>
+<select id="semester" name="semester" required>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label for="department">Department:</label></td>
+<td>
+<select id="department" name="department" required>
+<option value="cse">Computer Science</option>
+<option value="ece">Electronics</option>
+<option value="me">Mechanical</option>
+<option value="ce">Civil</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label for="sslcPercentage">SSLC Percentage:</label></td>
+<td><input type="number" id="sslcPercentage" name="sslcPercentage" step="0.1"
+required></td>
+</tr>
+<tr>
+<td><label for="pucPercentage">PUC Percentage:</label></td>
+<td><input type="number" id="pucPercentage" name="pucPercentage" step="0.1"
+required></td>
+</tr>
+<tr>
+<td><label for="address">Corresponding Address:</label></td>
+<td><textarea id="address" name="address" rows="4" cols="50"
+required></textarea></td>
+</tr>
+<tr>
+<td colspan="2">
+<button type="submit">Submit</button>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
