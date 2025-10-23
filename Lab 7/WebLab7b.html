@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JSON Date Conversion</title>
+
+<style>
+
+body {
+font-family: Arial, sans-serif;
+}
+
+.container {
+padding: 20px;
+}
+
+textarea {
+width: 100%;
+height: 100px;
+}
+
+button {
+margin-top: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<h1>Convert JSON Date</h1>
+
+<textarea id="jsonDateInput" placeholder='Enter JSON with date string, e.g., {"date":"2024-08-
+20T00:00:00Z"}'>
+</textarea>
+
+<button onclick="convertJsonDate()">Convert Date</button>
+
+<p id="dateResult"></p>
+
+</div>
+
+<script>
+
+function convertJsonDate()
+{
+ const jsonDateInput = document.getElementById('jsonDateInput').value;
+
+try {
+
+const jsonObject = JSON.parse(jsonDateInput);
+
+const date = new Date(jsonObject.date);
+
+document.getElementById('dateResult').textContent = `Converted Date:
+${date.toLocaleString()}`;
+ }
+catch (e) {
+
+document.getElementById('dateResult').textContent = 'Invalid JSON or Date';
+
+}
+}
+</script>
+</body>
+</html>

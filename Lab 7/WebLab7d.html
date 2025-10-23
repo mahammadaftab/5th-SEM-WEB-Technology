@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Create Hash from String</title>
+ <style>
+ body { font-family: Arial, sans-serif; }
+ .container { padding: 20px; }
+ input { width: 100%; }
+ button { margin-top: 10px; }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h1>Create Hash from String</h1>
+ <input type="text" id="stringInput" placeholder="Enter string here...">
+ <button onclick="createHash()">Create Hash</button>
+ <p id="hashResult"></p>
+ </div>
+ <script>
+ async function createHash() {
+ const stringInput = document.getElementById('stringInput').value;
+ const encoder = new TextEncoder();
+ const data = encoder.encode(stringInput);
+ const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+ const hashArray = Array.from(new Uint8Array(hashBuffer));
+ const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+ document.getElementById('hashResult').textContent = `Hash: ${hashHex}`;
+ }
+ </script>
+</body>
+</html>
