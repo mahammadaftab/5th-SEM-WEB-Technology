@@ -5,7 +5,7 @@ b) Convert JSON results into a date. <br>
 c) Converting From JSON To CSV and CSV to JSON. <br>
 d) Create hash from string using crypto.createHash() method 
 
-<b>7a) Converting JSON text to JavaScript Object.</b>
+<h2><b>7a) Converting JSON text to JavaScript Object.</b></h2>
 # Output Screenshorts
 <img width="940" height="687" alt="image" src="https://github.com/user-attachments/assets/3556c08b-8b76-49a3-bafa-3ebaa38f0cc3" />
 
