@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Append Content</title>
+<style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ padding: 20px;
+ }
+ .container {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ }
+ p, ul {
+ margin: 10px 0;
+ }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Append Content Example</h1>
+<p id="paragraph">This is an existing paragraph.</p>
+<ul id="list">
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+<button id="appendParagraph">Append to Paragraph</button>
+<button id="appendList">Append to List</button>
+</div>
+<!-- Include jQuery library -->
+<script src="E:\WEBDEVELOPMENTBCSL504\jquery-3.6.0.min.js"></script>
+<script>
+ $(document).ready(function() {
+ $('#appendParagraph').click(function() {
+ $('#paragraph').append(' This is appended content.');
+ });
+ $('#appendList').click(function() {
+ $('#list').append('<li>New Item</li>');
+ });
+ });
+</script>
+</body>
+</html>

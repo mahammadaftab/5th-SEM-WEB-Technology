@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJAX With jQuery</title>
+<style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ padding: 20px;
+ }
+ .container {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ text-align: center;
+ }
+ #content {
+ margin: 20px 0;
+ padding: 10px;
+ border: 1px solid #ddd;
+ background-color: #fafafa;
+ }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>AJAX With jQuery</h1>
+<button id="loadText">Load Text Content</button>
+<div id="content"></div>
+</div>
+<!-- Include jQuery library -->
+<script src="jquery-3.7.1.js"></script>
+<script>
+ $(document).ready(function() {
+ $('#loadText').click(function() {
+ $.ajax({
+ url: 'MyFirst.php', // Assume 'MyTextFile.txt' is the text file to load
+ method: 'GET',
+ success: function(data) {
+ $('#content').text(data);
+ },
+ error: function() {
+console.error('Failed to load text file');
+ }
+ });
+ });
+ });
+</script>
+</body>
+</html>

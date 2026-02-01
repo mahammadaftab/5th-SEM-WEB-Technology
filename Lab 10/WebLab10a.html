@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AJAX Without jQuery</title>
+<style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f4f4f4;
+ padding: 20px;
+ }
+ .container {
+ background-color: #fff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ text-align: center;
+ }
+ #content {
+ margin: 20px 0;
+ padding: 10px;
+ border: 1px solid #ddd;
+ background-color: #fafafa;
+ }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>AJAX Without jQuery</h1>
+<button id="loadText">Load Text Content</button>
+<div id="content"></div>
+</div>
+<script>
+document.getElementById('loadText').addEventListener('click', function() {
+var xhr = new XMLHttpRequest();
+xhr.open('GET','Test.txt',true); // Assume 'Text.txt' is the text file to load11
+xhr.onload = function() {
+ if (xhr.status>= 200 &&xhr.status< 300) {
+document.getElementById('content').textContent = xhr.responseText;
+ } else {
+//console.error('Failed to load text file');
+document.getElementById('content').textContent= ' Failed to Load Text File';
+ }
+ };
+xhr.onerror = function() {
+//console.error('Request error');
+document.getElementById('content').textContent= ' Request Error';
+ };
+xhr.send();
+ });
+</script>
+</body>
+</html>

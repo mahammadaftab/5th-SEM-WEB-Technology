@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> JQuery Animate</title>
+</head>
+<script src="E:\WEBDEVELOPMENTBCSL504\jquery-3.6.0.min.js"></script>
+<style>
+body{
+font-size:17px;
+font-family:arial;
+background:#f4f4f4;
+line-height:1.5em;
+}
+header{
+background:#333;
+color:#fff;
+padding:20px;
+text-align:center;
+border-bottom:4px #000 solid;
+margin-bottom:10px;
+}
+#container{
+width:90%;
+margin:auto;
+padding:10px;
+}
+#box{
+background:blue;
+color:#fff;
+width:500px;
+height:90px;
+padding:40px;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<header>
+<h1> JQuery Animate Demo</h1>
+</header>
+<center>
+<div id="container">
+<button id="btnFadeOut">Fade Out</button>
+<button id="btnFadeIn">Fade in</button>
+<button id="btnFadeTog">Fade Toggle</button>
+<br><br><br><br><br>
+<div id="box"> <h1> Hai Good Morning!... </h1></div>
+</div>
+<script>
+$(document).ready(function(){
+$('#btnFadeOut').click(function(){
+$('#box').fadeOut(1000, function(){
+$('#btnFadeOut').text('Its Gone');
+});
+});
+$('#btnFadeIn').click(function(){
+$('#box').fadeIn(1000);
+});
+$('#btnFadeTog').click(function(){
+$('#box').fadeToggle(1000);
+});
+});
+</script>
+</center>
+</body>
+</html>
